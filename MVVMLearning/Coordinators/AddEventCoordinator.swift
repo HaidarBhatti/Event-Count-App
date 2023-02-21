@@ -19,11 +19,13 @@ final class AddEventCoordinator: Coordinator{
     }
     
     func start() {
+        let modalNavigatinController = UINavigationController()
         let addEventViewController: AddEventViewController = .instantiate()
+        modalNavigatinController.setViewControllers([addEventViewController], animated: false)
         let viewModel = AddEventViewModel()
         viewModel.coordinator = self
         addEventViewController.viewModel = viewModel
-        navigationController.present(addEventViewController, animated: true)
+        navigationController.present(modalNavigatinController, animated: true)
     }
     
     func didFinishAddEvent() {

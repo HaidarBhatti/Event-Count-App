@@ -20,6 +20,9 @@
 		DC20A3AC299EBCE70093C366 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC20A3AB299EBCE70093C366 /* UIViewController+Extension.swift */; };
 		DC20A3B1299EBEAA0093C366 /* EventApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC20A3AF299EBEAA0093C366 /* EventApp.xcdatamodeld */; };
 		DC20A3B3299EBFA00093C366 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC20A3B2299EBFA00093C366 /* CoreDataManager.swift */; };
+		DC8D022929A38431001C9D4C /* TitleSubtitleCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8D022829A38431001C9D4C /* TitleSubtitleCellViewModel.swift */; };
+		DC8D022D29A384E3001C9D4C /* TitleSubtitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8D022B29A384E3001C9D4C /* TitleSubtitleCell.swift */; };
+		DC8D022E29A384E3001C9D4C /* TitleSubtitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC8D022C29A384E3001C9D4C /* TitleSubtitleCell.xib */; };
 		DCA2E3BD299FF664009FB87B /* EventListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA2E3BC299FF664009FB87B /* EventListViewModel.swift */; };
 		DCA2E3BF299FFFB1009FB87B /* AddEventCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA2E3BE299FFFB1009FB87B /* AddEventCoordinator.swift */; };
 		DCA2E3C129A000E1009FB87B /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA2E3C029A000E1009FB87B /* AddEventViewController.swift */; };
@@ -42,6 +45,9 @@
 		DC20A3AB299EBCE70093C366 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		DC20A3B0299EBEAA0093C366 /* EventApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EventApp.xcdatamodel; sourceTree = "<group>"; };
 		DC20A3B2299EBFA00093C366 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		DC8D022829A38431001C9D4C /* TitleSubtitleCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSubtitleCellViewModel.swift; sourceTree = "<group>"; };
+		DC8D022B29A384E3001C9D4C /* TitleSubtitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSubtitleCell.swift; sourceTree = "<group>"; };
+		DC8D022C29A384E3001C9D4C /* TitleSubtitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleSubtitleCell.xib; sourceTree = "<group>"; };
 		DCA2E3BC299FF664009FB87B /* EventListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewModel.swift; sourceTree = "<group>"; };
 		DCA2E3BE299FFFB1009FB87B /* AddEventCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventCoordinator.swift; sourceTree = "<group>"; };
 		DCA2E3C029A000E1009FB87B /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +88,7 @@
 				DC20A390299EB3560093C366 /* SceneDelegate.swift */,
 				DC20A3AF299EBEAA0093C366 /* EventApp.xcdatamodeld */,
 				DC20A3B2299EBFA00093C366 /* CoreDataManager.swift */,
+				DC8D022A29A3849B001C9D4C /* Views */,
 				DCA2E3C229A004A7009FB87B /* ViewModel */,
 				DC20A3AD299EBE390093C366 /* Extensions */,
 				DC20A3AE299EBE4C0093C366 /* Controllers */,
@@ -123,11 +130,21 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		DC8D022A29A3849B001C9D4C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DC8D022B29A384E3001C9D4C /* TitleSubtitleCell.swift */,
+				DC8D022C29A384E3001C9D4C /* TitleSubtitleCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		DCA2E3C229A004A7009FB87B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				DCA2E3BC299FF664009FB87B /* EventListViewModel.swift */,
 				DCA2E3C329A004C1009FB87B /* AddEventViewModel.swift */,
+				DC8D022829A38431001C9D4C /* TitleSubtitleCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -190,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC8D022E29A384E3001C9D4C /* TitleSubtitleCell.xib in Resources */,
 				DC20A39B299EB3580093C366 /* LaunchScreen.storyboard in Resources */,
 				DC20A398299EB3580093C366 /* Assets.xcassets in Resources */,
 				DC20A396299EB3560093C366 /* Main.storyboard in Resources */,
@@ -203,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC8D022D29A384E3001C9D4C /* TitleSubtitleCell.swift in Sources */,
 				DC20A3AC299EBCE70093C366 /* UIViewController+Extension.swift in Sources */,
 				DCA2E3C129A000E1009FB87B /* AddEventViewController.swift in Sources */,
 				DC20A3A4299EB4980093C366 /* AppCoordinator.swift in Sources */,
@@ -216,6 +235,7 @@
 				DC20A3B1299EBEAA0093C366 /* EventApp.xcdatamodeld in Sources */,
 				DCA2E3BD299FF664009FB87B /* EventListViewModel.swift in Sources */,
 				DCA2E3BF299FFFB1009FB87B /* AddEventCoordinator.swift in Sources */,
+				DC8D022929A38431001C9D4C /* TitleSubtitleCellViewModel.swift in Sources */,
 				DCA2E3C429A004C1009FB87B /* AddEventViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
